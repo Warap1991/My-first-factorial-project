@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+            font-size: 20px;
+            background-color: beige;
+        }
+        div{
+            padding: 0;
+            border: 5px solid black;
+            background-color: aliceblue;
+            border-radius: 8px;
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0;
+            color: white;
+            background-color: blue;
+            font-size: 30px;
+            width: 100%;
+        }
+        button{
+            color: bisque;
+            background-color: blue;
+            border-radius: 5px;
+            border-color: aliceblue ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        label, input, p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        }
+        input{
+            border-color: blue;
+            border-radius: 8px;
+        }
+       
+    </style>
+</head>
+<body>
+   <div>
+        <h1>Calculate the factorial of the number</h1>
+        <label>Enter the number:</label><input id = "num">
+        <br><br>
+        <button onclick = "fact()"> calculate the factorial </button>
+        <p id = "result"></p>
+    </div>
+<script>
+function fact(){
+var i, num, f;
+f = 1;
+num = document.getElementById("num").value;
+for(i = 1; i <= num; i++)  
+{
+f = f * i;
+}
+i = i - 1;  
+document.getElementById("result").innerHTML = "The factorial of the number " + i + " is: " + f ;
+}
+</script>
+</body>
+</html>
+
+ 
